@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    --main-text-color: black;
+    --secondary-text-color: white;
+    --main-bg-color: white;
+    --main-bg-color-offset: rgb(233, 233, 233);
+    --secondary-bg-color: #14b8a6;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-page-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    grid-row: 1 / -1;
+    background-color: var(--secondary-bg-color);
+    min-width: 235px;
+    display: grid;
+    grid-template-rows: 100px 350px auto;
+    padding: 10px 0 0 10px;
+    color: var(--secondary-text-color);
+}
+
+.sidebar svg {
+    fill: var(--secondary-text-color);
+    fill: white;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+}
+
+.dashboard-logo a {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.dashboard-logo svg {
+    width: 50px;
+}
+.dashboard-options {
+    margin-left: 15px;
+}
+
+.dashboard-options a {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.dashboard-options a svg {
+    width: 20px;
+    margin-right: 15px;
+}
+
+/* HEADER */
+
+.header {
+    background: var(--main-bg-color);
+}
+
+
+
+.main-content {
+    background: var(--main-bg-color-offset);
+}
