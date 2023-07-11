@@ -89,10 +89,118 @@ body {
 
 .header {
     background: var(--main-bg-color);
+    padding: 10px 20px;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 7px;
+}
+
+.search-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-top-options {
+    display: flex;
+    gap: 15px;
+    margin-left: 40px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.search-logo>svg, .nav-top-options>svg {
+    width: 20px;
+}
+
+.search-bar {
+    background-color: var(--main-bg-color-offset);
+    height: 22px;
+    flex: 1;
+    border-radius: 50px;
+    max-width: 400px;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.profile-image > img {
+    width: 40px;
+    object-fit:contain;
+}
+
+.nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bottom-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting>p {
+    margin: 0;
+    padding: 0;
+}
+
+.text-greeting {
+    font-size: 0.8em;
+}
+
+.user-name {
+    font-weight: 500;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.nav-bttn {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    border-radius: 50px;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bttn>p {
+    margin: 0;
+    padding: 0;
 }
 
 
 
 .main-content {
     background: var(--main-bg-color-offset);
+    height: 100%;
 }
