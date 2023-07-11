@@ -8,11 +8,25 @@
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    
+}
+
+.light-mode {
     --main-text-color: black;
     --secondary-text-color: white;
     --main-bg-color: white;
     --main-bg-color-offset: rgb(233, 233, 233);
     --secondary-bg-color: #14b8a6;
+    --card-icon-color: #14b8a6;
+}
+
+.dark-mode {
+    --main-text-color: white;
+    --secondary-text-color: #14b8a6;
+    --main-bg-color: rgb(37, 37, 37);
+    --main-bg-color-offset: rgb(12, 12, 12);
+    --secondary-bg-color: #042f2e;
+    --card-icon-color: #14b8a6;
 }
 
 a {
@@ -80,9 +94,29 @@ body {
     font-size: 1.2em;
 }
 
-.dashboard-options a svg {
+.dashboard-options svg {
     width: 20px;
     margin-right: 15px;
+}
+
+.dashboard-options p {
+    margin: 0;
+}
+
+.color-mode {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.color-mode:hover {
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.color-mode-svg {
+    display: flex;
+    align-items: center;
 }
 
 /* HEADER */
@@ -90,6 +124,7 @@ body {
 .header {
     background: var(--main-bg-color);
     padding: 10px 20px;
+    color: var(--main-text-color);
 }
 
 .nav-top {
@@ -120,6 +155,7 @@ body {
 
 .search-logo>svg, .nav-top-options>svg {
     width: 20px;
+    fill: var(--main-text-color);
 }
 
 .search-bar {
@@ -135,6 +171,7 @@ body {
 .search-bar>span {
     padding: 10px;
     font-size: .8em;
+    font-weight: 600;
     color: rgb(99, 99, 99);
 }
 
@@ -272,6 +309,7 @@ body {
 
 .section-heading, .card-heading {
     font-weight: 500;
+    color: var(--main-text-color);
 }
 
 .card {
@@ -282,6 +320,7 @@ body {
     background-color: var(--main-bg-color);
     display: grid;
     grid-template-rows: auto auto auto;
+    color: var(--main-text-color);
     /* flex-direction: column;
     justify-content: space-between; */
 }
@@ -298,7 +337,7 @@ body {
 
 .card-icons svg {
     width: 25px;
-    fill: var(--secondary-bg-color);
+    fill: var(--card-icon-color);
 }
 
 .right-card {
